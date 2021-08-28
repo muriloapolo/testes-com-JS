@@ -1,8 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+body {
+  background-image: url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/*Altera tamanho do Mosquito*/
 .mosquito1 {
-    width: 60px;
-    height: 60px;
+  width: 50px;
+  height: 50px;
+}
+.mosquito2 {
+  width: 70px;
+  height: 70px;
+}
+.mosquito3 {
+  width: 90px;
+  height: 90px;
+}
+/*Altera o lado do mosquito*/
+.ladoA {
+  transform: scaleX(1);
+}
+.ladoB {
+  transform: scaleX(-1);
+}
+
+/*formatação do painel*/
+.painel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  bottom: 0;
+  border-top: solid 1px #fff;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.vidas {
+  float: letf;
+}
+.cronometro {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">  
+    <link rel="stylesheet" href="css/app.css">
     <script src="js/app.js"></script>
     <title>Game -Mata Mosquito</title>
-    
 </head>
+
 <body onresize="ajustaTamanhoPalcoJogo()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="/assets/coracao_cheio.png" alt="">
+            <img id="v2" src="/assets/coracao_cheio.png" alt="">
+            <img id="v3" src="/assets/coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro">
+            Tempo Restante: ?
+        </div>
+
+    </div>
 
 
     <script>
-        posicaoRandomica()
+        /*Gera elemento aleatoriamente*/
+        setInterval(function () { posicaoRandomica() }, 2000);
+
     </script>
 </body>
-   
+
 </html>
